@@ -1,0 +1,160 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`boundary AppTest boundary should mount App without crashing 1`] = `
+Array [
+  <div
+    className="App"
+  >
+    <Movies />
+  </div>,
+]
+`;
+
+exports[`boundary AppTest boundary should mount Movie without crashing 1`] = `
+Array [
+  <div
+    className="Movies"
+  >
+    <h3>
+      Movies
+    </h3>
+    <fieldset>
+      <legend>
+        Filters
+      </legend>
+      <div>
+        <label>
+          <b>
+            Genres
+          </b>
+        </label>
+      </div>
+      <div>
+        <React.Fragment>
+          <Checkbox
+            item={
+              Object {
+                "checked": true,
+                "name": "action",
+              }
+            }
+          />
+        </React.Fragment>
+        <React.Fragment>
+          <Checkbox
+            item={
+              Object {
+                "checked": true,
+                "name": "fantasy",
+              }
+            }
+          />
+        </React.Fragment>
+        <React.Fragment>
+          <Checkbox
+            item={
+              Object {
+                "checked": true,
+                "name": "romance",
+              }
+            }
+          />
+        </React.Fragment>
+        <React.Fragment>
+          <Checkbox
+            item={
+              Object {
+                "checked": true,
+                "name": "horror",
+              }
+            }
+          />
+        </React.Fragment>
+      </div>
+      <div>
+        <label>
+          <b>
+            Language
+          </b>
+        </label>
+      </div>
+      <div>
+        <React.Fragment>
+          <Checkbox
+            item={
+              Object {
+                "checked": true,
+                "name": "hindi",
+              }
+            }
+          />
+        </React.Fragment>
+        <React.Fragment>
+          <Checkbox
+            item={
+              Object {
+                "checked": true,
+                "name": "english",
+              }
+            }
+          />
+        </React.Fragment>
+        <React.Fragment>
+          <Checkbox
+            item={
+              Object {
+                "checked": true,
+                "name": "telugu",
+              }
+            }
+          />
+        </React.Fragment>
+        <React.Fragment>
+          <Checkbox
+            item={
+              Object {
+                "checked": true,
+                "name": "punjabi",
+              }
+            }
+          />
+        </React.Fragment>
+      </div>
+    </fieldset>
+    <Card
+      movie={
+        Object {
+          "available": true,
+          "genre": "fantasy",
+          "id": 1,
+          "image": "https://i.picsum.photos/id/650/300/200.jpg?hmac=nuRnzrByBYKU6fsTl1xwz3MIpNrNjb0PjLJA5ypiOqU",
+          "language": "Telugu",
+          "length": 119,
+          "price": 300,
+          "ratings": 3.4,
+          "releasedDate": "28/12/2012",
+          "showTime": "21:00",
+          "title": "Superman is flying",
+        }
+      }
+    />
+    <Card
+      movie={
+        Object {
+          "available": true,
+          "genre": "horror",
+          "id": 2,
+          "image": "https://i.picsum.photos/id/650/300/200.jpg?hmac=nuRnzrByBYKU6fsTl1xwz3MIpNrNjb0PjLJA5ypiOqU",
+          "language": "English",
+          "length": 124,
+          "price": 370,
+          "ratings": 3.9,
+          "releasedDate": "14/7/2014",
+          "showTime": "15:00",
+          "title": "Batman is watching",
+        }
+      }
+    />
+  </div>,
+]
+`;
