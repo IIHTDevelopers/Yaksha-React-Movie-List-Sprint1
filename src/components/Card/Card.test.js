@@ -3,8 +3,10 @@ import { shallow } from 'enzyme';
 import Card from './Card';
 import { render, screen, fireEvent, act, queryByAttribute, waitFor } from '@testing-library/react';
 
+let testName = "CardTest boundary"
+
 describe('boundary', () => {
-      describe('Card component', () => {
+  describe('Card component', () => {
     let component;
     let movie;
 
@@ -26,19 +28,19 @@ describe('boundary', () => {
       component = shallow(<Card movie={movie} />);
     });
 
-    it('should mount', () => {
+    it(`${testName} should mount`, () => {
       expect(component.length).toBe(1);
       expect(component).toBeTruthy();
     });
 
 
-    it(`should render movie image`, async() => {
+    it(`${testName} should render movie image`, async () => {
       component = render(<Card movie={movie} />);
 
       expect(component.container.querySelector('img').src).toBe(movie.image);
     });
 
-    it(`should render movie title`, async() => {
+    it(`${testName} should render movie title`, async () => {
       component = render(<Card movie={movie} />);
 
       expect(component).toBeDefined();
@@ -47,7 +49,7 @@ describe('boundary', () => {
 
     });
 
-    it(`should render movie director`, async() => {
+    it(`${testName} should render movie director`, async () => {
       component = render(<Card movie={movie} />);
 
       expect(component).toBeDefined();
